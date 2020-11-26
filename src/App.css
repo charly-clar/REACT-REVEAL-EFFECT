@@ -1,0 +1,81 @@
+.main .paragraphe {
+  position: absolute;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  top: 400px;
+  font-size: 10px;
+  font-weight: 500;
+  font-family: "Avenir";
+  letter-spacing: 10px;
+}
+
+.main .paragraphe:after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: black;
+  top: 0;
+  right: 0;
+  -webkit-animation: reveal 1.5s ease-in-out forwards;
+          animation: reveal 1.5s ease-in-out forwards;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+
+@-webkit-keyframes reveal {
+  0% {
+    width: 100%;
+  }
+  100% {
+    width: 0%;
+  }
+}
+
+@keyframes reveal {
+  0% {
+    width: 100%;
+  }
+  100% {
+    width: 0%;
+  }
+}
+
+.main .container {
+  width: 1440px;
+  margin: 0 auto;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  visibility: hidden;
+}
+
+.img-container {
+  left: 16%;
+  width: 1000px;
+  height: 600px;
+  position: absolute;
+  overflow: hidden;
+  background-position: center;
+  background-size: cover;
+}
+
+.img-container:after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  top: 0;
+  right: 0;
+}
+
+.img-container img {
+  width: 1000px;
+  margin: 0 auto;
+}
+/*# sourceMappingURL=App.css.map */
